@@ -1,4 +1,4 @@
-# Repository for submitting labs for STAT 215A Fall 2021
+# Repository for submitting labs for STAT 215A Fall 2024
 
 ## Setup
 
@@ -8,15 +8,15 @@ Your report and code will be submitted via GitHub. The following instructions wi
 
 1. Sign up for GitHub (https://github.com/).
 
-1. Optional: Go to https://education.github.com/students and sign up for the student pack (used to be required to get unlimited private repositories).
+1. Highly recommended: Go to https://education.github.com/students and sign up for the student pack. This will give you free access to GitHub Copilot. Do this sooner rather than later as the verification process can take a week.
 
 Once you have completed these first steps, you are then ready to create your private GitHub repository for this class.
 
-1. Locally on your machine, clone my stat-215-a repository: `git clone https://github.com/OmerRonen/stat-215-a. This will create a copy of the repository on your own computer.
+1. Locally on your machine, clone my stat-215-a repository: `git clone https://github.com/anthonyozerov/stat-215-a. This will create a copy of the repository on your own computer.
 
-1. On the GitHub website, log in and create a **private** remote repository called *stat-215-a*. Add me (*cz-ye*) as a collaborator for this repository (check out settings on the repo website).
+1. On the GitHub website, log in and create a **private** remote repository called *stat-215-a*. Add me (*anthonyozerov*) as a collaborator for this repository (on github.com/USERNAME/stat-215-a, navigate to Settings -> Collaborators -> Add people).
 
-1. Back in the terminal, set the origin of your local repository to be the remote repository that you just made. Change USERNAME below to your username. This tells git which remote repository to push your changes to when you `git push` (`git remote set-url origin https://github.com/USERNAME/stat-215-a.git`).
+1. Back in the terminal, set the origin of your local repository to be the remote repository that you just made. Change USERNAME in the command below to your username. This tells git which remote repository to push your changes to when you `git push` (`git remote set-url origin https://github.com/USERNAME/stat-215-a.git`). (Advanced, if you have SSH keys set up for github, you can use the SSH URL instead of the HTTPS URL).
 
 1. Edit *info.txt* to reflect your own information.
 
@@ -39,33 +39,12 @@ Now you're ready to push to your remote repository for the first time:
 
 ## Submitting your projects
 
-To submit your projects, you will need to create a subfolder in your local `stat-215-a` folder called `lab1` (if you are submitting lab 1). Inside this folder you should have the following (exact) structure:
-
-```
-lab1/
-  homework1.pdf
-  lab1.Rmd
-  lab1.pdf
-  lab1_blind.Rmd
-  lab1_blind.pdf
-  R/
-  other/
-```
-
-- The source of your report (with code) will be contained in the `lab1.Rmd` file (`lab1.Rnw` is fine too).
-
-- The compiled version of your report will be contained in `lab1.pdf`.
-
-- You will also submit a "blind" version of each of these documents that does not include your name (`lab1_blind.Rmd` and `lab1_blind.pdf`).
-
-- The `R/` folder will contain any extra R scripts needed to compile your report.
-
-- The `homework.pdf` file will contain your completed homework. Please do not include any irrelevant files.
+To submit your projects, you will need to create a subfolder in your local `stat-215-a` folder called `lab1` (if you are submitting lab 1). The precise structure of the `lab1` folder is described in the `lab-instructions.pdf` file in the `stat-215-a-gsi` repo.
 
 Note that GitHub cannot host files more than 100 MB. If you try to push a file larger than this, GitHub will cry. This means you should avoid pushing the data to your GitHub.  
 
 When you are ready, you need to add, commit, and push the `lab1/` folder.
 
-At the time when the lab is due, we will run a script that automatically pulls all of your assignments into my local versions of your `stat-215-a` repositories. Please make sure to submit your labs on time. We will spend some time in a lab having everyone submit a pretend assignment so that you are all clear on what to do.
+At the time when the lab is due, we will run a script that automatically pulls all of your assignments into my local versions of your `stat-215-a` repositories. Please make sure to submit your labs on time. `lab0` is a pretend assignment which you will complete to make sure that you are all clear on what to do.
 
-Note: this document was originally written by Rebecca Barter in Fall 2017 and edited to reflect the changes in the course.  
+Note: this document was originally written by Rebecca Barter in Fall 2017 and edited by successive GSIs to reflect the changes in the course.  
