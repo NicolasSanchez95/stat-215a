@@ -12,11 +12,11 @@ Your report and code will be submitted via GitHub. The following instructions wi
 
 Once you have completed these first steps, you are then ready to create your private GitHub repository for this class.
 
-1. Locally on your machine, clone my stat-215-a repository: `git clone https://github.com/anthonyozerov/stat-215-a. This will create a copy of the repository on your own computer.
+1. Locally on your machine, clone my stat-215-a repository: `git clone https://github.com/anthonyozerov/stat-215-a`. This will create a copy of the repository on your own computer.
 
-1. On the GitHub website, log in and create a **private** remote repository called *stat-215-a*. Add me (*anthonyozerov*) as a collaborator for this repository (on github.com/USERNAME/stat-215-a, navigate to Settings -> Collaborators -> Add people).
+1. On the GitHub website, log in and create a **private** remote repository called `stat-215-a`. Add me (*anthonyozerov*) as a collaborator for this repository (on https://github.com/USERNAME/stat-215-a, navigate to Settings -> Collaborators -> Add people).
 
-1. Back in the terminal, set the origin of your local repository to be the remote repository that you just made. Change USERNAME in the command below to your username. This tells git which remote repository to push your changes to when you `git push` (`git remote set-url origin https://github.com/USERNAME/stat-215-a.git`). (Advanced, if you have SSH keys set up for github, you can use the SSH URL instead of the HTTPS URL).
+1. Back in the terminal, set the origin of your local repository to be the remote repository that you just made. Change USERNAME in the command below to your username. This tells git which remote repository to push your changes to when you `git push` (`git remote set-url origin https://github.com/USERNAME/stat-215-a.git`). (Advanced: if you have SSH keys set up for github, you can use the SSH URL instead of the HTTPS URL).
 
 1. Edit *info.txt* to reflect your own information.
 
