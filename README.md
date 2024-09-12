@@ -4,21 +4,31 @@
 
 Your report and code will be submitted via GitHub. The following instructions will show you how to set up your GitHub account and configure a repository so that you can submit your assignments. This workflow is shamelessly copied (with slight modifications) from Chris Paciorek and Jarod Millman's STAT243 class in 2014.
 
-1. Install Git on your system (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+1. If you are not on a Unix system (e.g. Linux or MacOS or WSL), get on one. Ask me how or refer to the instructions previously given by the GSI.
+
+1. Install Git on your system if it is not there already (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 1. Sign up for GitHub (https://github.com/).
 
 1. Highly recommended: Go to https://education.github.com/students and sign up for the student pack. This will give you free access to GitHub Copilot. Do this sooner rather than later as the verification process can take a week.
 
-Once you have completed these first steps, you are then ready to create your private GitHub repository for this class.
+Once you have completed these first steps, you are then ready to create your private GitHub repository for this class. All of the following instructions should be done only on the GitHub website and in the command line. **Do not** use the GitHub Desktop app or any other GUI, as they may do things another way which messes things up.
 
-1. Locally on your machine, clone my stat-215-a repository: `git clone https://github.com/anthonyozerov/stat-215-a`. This will create a copy of the repository on your own computer.
+1. Open your terminal and navigate to the directory where you keep your 215a work. For example, I would do `cd grad/215a` to enter my `215a` directory in my `grad` folder.
 
-1. On the GitHub website, log in and create a **private** remote repository called `stat-215-a`. Add me (*anthonyozerov*) as a collaborator for this repository (on https://github.com/USERNAME/stat-215-a, navigate to Settings -> Collaborators -> Add people).
+1. Using the command-line, clone my stat-215-a repository: `git clone https://github.com/anthonyozerov/stat-215-a`. This will create a copy of the `stat-215-a` repository on your own computer.
 
-1. Back in the terminal, set the origin of your local repository to be the remote repository that you just made. Change USERNAME in the command below to your username. This tells git which remote repository to push your changes to when you `git push`. First, enter the repository directory with `cd stat-215-a`, then point it to your private repo with `git remote set-url origin https://github.com/USERNAME/stat-215-a.git`. (Advanced: if you have SSH keys set up for github, you can use the SSH URL instead of the HTTPS URL).
+1. On the GitHub website, log in and create a **private** remote repository called `stat-215-a`. That must be its exact name! **Do not** check the boxes to "Add a README file" or "Add .gitignore" or "Choose a license". After you hit "Create repository", you will be able to see it at https://github.com/YOURUSERNAME/stat-215-a. Note that your repository will be empty.
 
-1. Edit *info.txt* to reflect your own information.
+1. Add me (`anthonyozerov`) as a collaborator on your private repository so that I can access it (on https://github.com/YOURUSERNAME/stat-215-a, navigate to Settings -> Collaborators -> Add people).
+
+1. Back in the terminal, set the origin of your local repository to be the remote repository that you just made. This tells git which remote repository to push your changes to when you `git push`. First, enter the repository directory with `cd stat-215-a`, then point it to your private repo with `git remote set-url origin https://github.com/YOURUSERNAME/stat-215-a.git`. Change YOURUSERNAME in the command to your GitHub username. (Advanced: if you have SSH keys set up for github, you can use the SSH URL instead of the HTTPS URL).
+
+1. Now you can push the contents of your local `stat-215-a` repository to your remote GitHub one. Do this with `git push`. If you are prompted for a username, enter your GitHub username. If you are prompted for a password, you must enter a GitHub access token (If you use your GitHub password, you will see an authentication error). If you don't have one yet, you can make an access token at https://github.com/settings/tokens/new. Feel free to set the expiration to "No expiration" (though that is not super secure...). The only box you need to check under "Select scopes" is "repo". After you create the token, make sure to copy it and save it somewhere, as you will never see it again.
+
+1. Check that the files have been pushed to your remote repository by navigating to https://github.com/YOURUSERNAME/stat-215-a.
+
+1. Now, back in the terminal (or some text editor on your local machine) Edit *info.txt* in your local `stat-215-a` repository to reflect your own information.
 
 ```
 name = "Jane Smith"
@@ -27,15 +37,13 @@ email = "jsmith@berkeley.edu"
 github_name = "janesmith"
 ```
 
-Now you're ready to push to your remote repository for the first time:
+1. In your terminal while you are in the `stat-215-a` repository directory, check git status `git status`. You should see a bunch of text including `modified:   info.txt`.
 
-1. Check git status `git status`. You should see a bunch of text including `modified:   info.txt`.
-
-1. Add the files (`git add info.txt`; feel free to also add the `.gitignore` with `git add .gitignore`) and commit (`git commit -m “Updated info.txt with my own information”`).
+1. Add the file (`git add info.txt`) and commit (`git commit -m “Updated info.txt with my own information”`).
 
 1. Push your changes to your copy of the remote repository (`git push` or sometimes `git push remote origin`)
 
-1. Check that info.txt has been updated in your remote github repository by navigating to https://github.com/USERNAME/stat-215-a (change USERNAME to your username)
+1. Check that info.txt has been updated in your remote github repository by navigating to https://github.com/YOURUSERNAME/stat-215-a (change YOURUSERNAME to your username).
 
 ## Submitting your projects
 
