@@ -1,4 +1,4 @@
-# Repository for submitting labs for STAT 215A Fall 2024
+# Repository for submitting labs for STAT 215A Fall 2025
 
 ## Setup
 
